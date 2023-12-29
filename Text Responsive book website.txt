@@ -1,0 +1,192 @@
+========== HEADER ==========
+.nav__logo
+E-Book
+
+.nav__link
+Home - Featured - Discount - New Books - Testimonial
+
+
+========== SEARCH  ==========
+.search__input placeholder
+What are you looking for?
+
+
+========== LOGIN ==========
+login__title
+Log In
+
+.login__label placeholder
+Email
+Write your email
+
+Password
+Enter your password
+
+.login__signup
+You do not have an account? <a href="#">Sign up</a>
+
+.login__forgot
+You forgot your password
+
+.login__button
+Log In
+
+========== HOME ==========
+.home__title
+Browse & <br>
+Select E-Books
+
+.home__description
+Find the best e-books from your favorite 
+writers, explore hundreds of books with all 
+possible categories, take advantage of the 
+50% discount and much more. 
+
+.button
+Explore Now
+
+
+========== SERVICES ==========
+.services__title .services__description
+Free Shipping
+Order More Than $100
+
+Secure Payment
+100% Secure Payment
+
+24/7 Support
+Call us anytime
+
+
+========== FEATURED ==========
+.section__title
+Featured Books
+
+.featured__title .featured__discount .featured__price
+Featured Book
+$11.99
+$19.99
+
+.button
+Add To Cart
+
+
+========== DISCOUNT ==========
+.section__title
+Up To 50% Discount 
+
+.discount__description
+Take advantage of the discount days we 
+have for you, buy books from your favorite 
+writers, the more you buy, the more 
+discounts we have for you.
+
+.button
+Shop Now
+
+
+========== NEW BOOKS ==========
+.section__title
+New Books
+
+.new__title .new__discount .new__price
+New Book
+$7.99
+$14.99
+
+
+========== JOIN ==========
+.join__title
+Subscribe To Receive <br>
+The Latest Updates
+
+.join__input placeholder
+Enter email
+
+.join__button
+Subscribe
+
+
+========== TESTIMONIAL ==========
+.section__title
+Customer Opinions
+
+.testimonial__title .testimonial__description
+Rial Loz
+The best website to buy books, the purchase 
+is very easy to make and has great discounts.
+
+
+========== FOOTER ==========
+.footer__logo
+E-Book
+
+.footer__description
+Find and explore the best <br>
+eBooks from all your <br>
+favorite writers.
+
+footer__title .footer__link
+About
+ Awards
+ FAQs
+ Privacy policy
+ Terms of services
+
+Company
+ Blogs
+ Community
+ Our team
+ Help center
+
+Contact
+ Av. Hacienda <br>
+ Lima 4321, Perú 
+
+ e.book@email.com <br>
+ 0987-654-321
+
+Social
+ https://www.facebook.com/
+ https://www.instagram.com/
+ https://twitter.com/
+
+.footer__copy
+&#169; All Rights Reserved By Bedimcode
+
+
+//////////FEATURED BOOKS////////////
+
+1 - Вещерът 1: Последното желание 15,00
+2 - Чоки 11,00
+3 - Да спиш в море от звезди 40,50
+4 - Дяволският остров (Никола Бьогле) 17,00 
+5 - По-късно 17,99
+6 - Подобрен 18,90
+7 - Живарник 9,00
+8 - Законът на Устър 5,25
+9 - Живак. Романът (Димитър Живков) 15,90
+10 - Изкуствен интелект 22,00
+
+////////NEW BOOKS////////
+
+1 - Брак по сметка (Романите на Ела Мейс 3) 19,54 
+2 - Увлечението (Ново издание) 17,95
+3 - Виртуални непознати 15,99
+4 - Канела, сняг и звезди 21,60 
+5 - Коледната ваканция 7,99 
+6 - Уви, не съм светица 14,40
+7 - Краят на думите 15,00 
+8 - Силоз (Силоз 1) 25,30
+9 - Представи си ме (Разбий ме 6) 19,90
+10 - Хари Потър и затворникът от Азкабан (дизайн и илюстрации MinaLima) 89,00
+11 - Костенурките нинджа: Последният ронин 40,50
+12 - Станете! ООД: Не си играй с храната 15,00 
+13 - Глава 12 18,70
+14 - Корморан Страйк 7. Отприщен гроб 24,00
+15 - Стая за гости 22,00
+16 - Съвършена плячка 14,25
+17 - Пръстът на Галилей 10,00
+18 - Перспективата изкуствен интелект 17,25
+19 - Психология. Приключения в човешкия ум 24,00 
+20 - Мозъкът - твоята суперсила 11,25

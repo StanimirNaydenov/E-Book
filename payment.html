@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/paymentstyle.css">
+    <title>Payment</title>
+</head>
+<body>
+    
+    <div class="mainscreen">
+        <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+          <div class="card">
+            <div class="leftside">
+              <img
+                src="assets/img/payment.jpg"
+                class="product"
+                alt="Shoes"
+              />
+            </div>
+            <div class="rightside">
+              <form action="payment.html">
+                <h1>Направете вашата поръчка</h1>
+                <h2>Информация за плащане</h2>
+                <p>Име на картодържателя</p>
+                <input type="text" class="inputbox" placeholder="Въведете вашето име" name="name" required />
+                <p>Номер на карта</p>
+                <input type="number" placeholder="0000-0000-0000-0000" class="inputbox" name="card_number" id="card_number" required />
+    
+                <p>Вид на карта</p>
+                <select class="inputbox" name="card_type" id="card_type" required>
+                  <option value="">--Изберете тип карта--</option>
+                  <option value="Visa">Visa</option>
+                  <option value="RuPay">RuPay</option>
+                  <option value="MasterCard">MasterCard</option>
+                </select>
+    <div class="expcvv">
+    
+                <p class="expcvv_text">Изтичане</p>
+                <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+    
+                <p class="expcvv_text2">CVV</p>
+                <input type="password" class="inputbox" name="cvv" id="cvv" required />
+            </div>
+                <p></p>
+                <button type="submit" class="button">Занършване на поръчка</button>
+              </form>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

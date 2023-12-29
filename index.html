@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>E-Book</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav_logo">
+               <i class="ri-book-3-line"></i> E-Book
+            </a>
+            <div class="nav_menu">
+               <ul class="nav_list">
+                  <li class="nav_item">
+                     <a href="#home" class="nav_link active-link">
+                        <i class="ri-home-line"></i>
+                        <span>Начало</span>
+                     </a>
+                  </li>
+
+                  <li class="nav_item">
+                     <a href="#featured" class="nav_link">
+                        <i class="ri-book-3-line"></i>
+                        <span>Налични</span>
+                     </a>
+                  </li>
+
+                  <li class="nav_item">
+                     <a href="#discount" class="nav_link">
+                        <i class="ri-price-tag-3-line"></i>
+                        <span>Промоции</span>
+                     </a>
+                  </li>
+
+                  <li class="nav_item">
+                     <a href="#new" class="nav_link">
+                        <i class="ri-bookmark-line"></i>
+                        <span>Нови книги</span>
+                     </a>
+                  </li>
+
+                  <li class="nav_item">
+                     <a href="#testimonial" class="nav_link">
+                        <i class="ri-message-3-line"></i>
+                        <span>Мнения</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav_actions">
+               <i class="ri-search-line search-button" id="search-button"></i>
+
+               <i class="ri-user-line login-button" id="login-button"></i>
+
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search_form">
+            <i class="ri-search-line search_icon"></i>
+            <input type="search" placeholder="Какво търсите?" class="search_input">
+         </form>
+
+         <i class="ri-close-line search_close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="index.html" class="login_form grid">
+            <h3 class="login_title"> Вход</h3>
+
+            <div class="login_group grid">
+               <div>
+                  <label for="login-email" class="login_label">Email</label>
+                  <input type="email" placeholder="Напишете своя имейл" id="login-email" class="login_input">
+               </div>
+
+               <div>
+                  <label for="login-pass" class="login_label">Парола</label>
+                  <input type="password" placeholder="Въведете паролата си" id="login-pass" class="login_input">
+               </div>
+            </div>
+
+            <span class="login_signup">
+               Нямате акаунт? <a href="register.html">Регистрирайте се</a>
+            </span>
+
+            <a href="#" class="login_forgot">
+               Забравихте паролата си
+            </a>
+
+            <button type="submit" class="login_button button">Вход</button>
+         </form>
+         
+         <i class="ri-close-line login_close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home_container container grid">
+               <div class="home_data">
+                  <h1 class="home_title">
+                     Прегледайте и <br>
+                     изберете електронни книги
+                  </h1>
+
+                  <p class="home_description">
+                     Намерете най-добрите електронни книги от любимите си
+                      писатели, изследвайте стотици книги с всички
+                      възможни категории, възползвайте се от
+                      50% отстъпка и много повече.
+                  </p>
+
+                  <a href="#" class="button">Разгледайте сега</a>
+               </div>
+
+               <div class="home_images">
+                  <div class="home_swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home_article swiper-slide">
+                           <img src="assets/img/home-book-1.png" alt="image" class="home_img">
+                        </article>
+
+                        <article class="home_article swiper-slide">
+                           <img src="assets/img/home-book-2.png" alt="image" class="home_img">
+                        </article>
+
+                        <article class="home_article swiper-slide">
+                           <img src="assets/img/home-book-3.png" alt="image" class="home_img">
+                        </article>
+
+                        <article class="home_article swiper-slide">
+                           <img src="assets/img/home-book-4.png" alt="image" class="home_img">
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services_container container grid">
+               <article class="services_card">
+                  <i class="ri-timer-2-line"></i>
+                  <h3 class="services_title">Право на връщане до 14 работни дни</h3>
+                  <p class="services_description">Възстановяване на пълната сума</p>
+               </article>
+
+               <article class="services_card">
+                  <i class="ri-lock-2-line"></i>
+                  <h3 class="services_title">Сигурно плащане</h3>
+                  <p class="services_description">100% сигурно плащане</p>
+               </article>
+
+               <article class="services_card">
+                  <i class="ri-customer-service-2-line"></i>
+                  <h3 class="services_title">24/7 поддръжка</h3>
+                  <p class="services_description">Обадете ни се по всяко време</p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section_title">
+               Налични книги
+            </h2>
+
+            <div class="featured_container container">
+               <div class="featured_swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="featured_card swiper-slide ">
+                        <img src="assets/img/1.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Вещерът 1: Последното желание</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 11,00</span>
+                           <span class="featured_price">BGN 15,00</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/2.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Чоки</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 8,50</span>
+                           <span class="featured_price">BGN 11,00</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/3.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Да спиш в море от звезди</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 40,50</span>
+                           <span class="featured_price">BGN 45,90</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/4.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Дяволският остров (Никола Бьогле)</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 12.99</span>
+                           <span class="featured_price">BGN 17,00</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/5.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">По-късно</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 8.99</span>
+                           <span class="featured_price">BGN 17,99</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/6.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Подобрен</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 14,59</span>
+                           <span class="featured_price">18,90</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/7.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Живарник</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 7,25</span>
+                           <span class="featured_price">BGN 9,00</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/8.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Налични книги</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 4,25</span>
+                           <span class="featured_price">BGN 5,25</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/9.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Живак. Романът (Димитър Живков)</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 10.99</span>
+                           <span class="featured_price">BGN 15,90</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                     <article class="featured_card swiper-slide">
+                        <img src="assets/img/10.png" alt="image" class="featured_img">
+
+                        <h2 class="featured_title">Изкуствен интелект</h2>
+
+                        <div class="featured_prices">
+                           <span class="featured_discount">BGN 11.00</span>
+                           <span class="featured_price">BGN 22,00</span>
+                        </div>
+
+                        <a href="payment.html" target="_blank"><button class="button">Купете сега</button></a>
+
+                        <div class="featured_actions">
+                           <button><i class="ri-search-line"></i></button>
+                           <button><i class="ri-heart-3-line"></i></button>
+                           <button><i class="ri-eye-line"></i></button>
+                        </div>
+                     </article>
+
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount_container container grid">
+               <div class="discount_data">
+                  <h2 class="discount_title section_title">
+                     До 50% отстъпка
+                  </h2>
+
+                  <p class="discount_description">
+                     Възползвайте се от дните с намаления, които ние
+                      има за вас, купете книги от любимите си
+                      писатели, колкото повече купувате, толкова повече
+                      отстъпки, които имаме за вас.
+                  </p>
+
+                  <a href="#" class="button">Пазарувай сега</a>
+               </div>
+
+               <div class="discount_images">
+                  <img src="assets/img/discount-book-1.png" alt="image" class="discount_img-1">
+                  <img src="assets/img/discount-book-2.png" alt="image" class="discount_img-2">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            <h2 class="section_title">
+              Нови книги
+            </h2>
+
+            <div class="new_container container">
+               <div class="new_swiper swiper">
+                  <div class="swiper-wrapper">
+                     <a href="#" class="new_card swiper-slide">
+                        <img src="assets/img/new1.png" alt="image" class="new_img">
+
+                        <div>
+                           <h2 class="new_title">Брак по сметка (Романите на Ела Мейс 3)</h2>
+                           <div class="new_prices">
+                              <span class="new_discount">BGN 15.99</span>
+                              <span class="new_price">BGN 19,54 </span>
+                           </div>
+   
+                           <div class="new_stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new 2.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Увлечението (Ново издание)</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 12,00</span>
+                                 <span class="new_price">BGN 17,95</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new3.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Виртуални непознати</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 10,99</span>
+                                 <span class="new_price">BGN 15,99</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new4.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Канела, сняг и звезди</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 13,50</span>
+                                 <span class="new_price">BGN 21,60</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new5.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Коледната ваканция</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 3,99</span>
+                                 <span class="new_price">BGN 7,99 </span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new6.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Уви, не съм светица</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 7,99</span>
+                                 <span class="new_price">BGN 14,40</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new7.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Краят на думите</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 12,99</span>
+                                 <span class="new_price">BGN 15,00</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new8.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Силоз (Силоз 1)</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 15,59</span>
+                                 <span class="new_price">BGN 25,30</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new9.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Представи си ме (Разбий ме 6)</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 13,00</span>
+                                 <span class="new_price">BGN 19,99</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new10.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Хари Потър и затворникът от Азкабан <br> (дизайн и илюстрации MinaLima)</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 45,99</span>
+                                 <span class="new_price">BGN  89,00</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="new_swiper swiper">
+                  <div class="swiper-wrapper">
+                     <a href="#" class="new_card swiper-slide">
+                        <img src="assets/img/new11.png" alt="image" class="new_img">
+
+                        <div>
+                           <h2 class="new_title">Костенурките нинджа: Последният ронин</h2>
+                           <div class="new_prices">
+                              <span class="new_discount">BGN 29,50</span>
+                              <span class="new_price">BGN 40,50</span>
+                           </div>
+   
+                           <div class="new_stars">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-fill"></i>
+                           </div>
+                        </div>
+
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new12.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Станете! ООД: Не си играй с храната</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 13,99</span>
+                                 <span class="new_price">BGN 15,00 </span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new13.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Глава 12</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 11,99</span>
+                                 <span class="new_price">BGN 18,70</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new14.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Корморан Страйк 7. Отприщен гроб</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 12,00</span>
+                                 <span class="new_price">BGN 24,00</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new15.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Стая за гости</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 11,00</span>
+                                 <span class="new_price">BGN 22,00</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new16.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Съвършена плячка</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 8,50</span>
+                                 <span class="new_price">BGN 14,25</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new17.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Пръстът на Галилей</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 5,00</span>
+                                 <span class="new_price">BGN 10,00</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new18.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Перспективата изкуствен интелект</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 12,90</span>
+                                 <span class="new_price">BGN 17,25</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new19.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Психология. Приключения в човешкия ум</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 12,99</span>
+                                 <span class="new_price">BGN 24,00 </span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="new_card swiper-slide">
+                           <img src="assets/img/new20.png" alt="image" class="new_img">
+   
+                           <div>
+                              <h2 class="new_title">Мозъкът - твоята суперсила</h2>
+                              <div class="new_prices">
+                                 <span class="new_discount">BGN 7,49</span>
+                                 <span class="new_price">BGN 11,25</span>
+                              </div>
+      
+                              <div class="new_stars">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-half-fill"></i>
+                              </div>
+                           </div>
+                        </a>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+    </div>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join_container">
+               <img src="assets/img/join-bg.jpg" alt="image" class="join_bg">
+
+               <div class="join_data container grid">
+                  <h2 class="join_title section_title">
+                     Абонирайте се за получаване на <br>
+                     Най-новите актуализации
+                  </h2>
+
+                  <form action="index.html" class="join_form">
+                     <input type="email" placeholder="Въведете имейл" class="join_input">
+                     <button type="submit" class="join_button button">Абонирай се</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            <h2 class="section_title">
+               Мнения на клиенти
+            </h2>
+
+            <div class="testimonial_container container">
+               <div class="testimonial_swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="testimonial_card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-1.png" alt="image" class="testimonial_img">
+
+                        <h2 class="testimonial_title">Гергана Иванова</h2>
+                        <p class="testimonial_description">
+                           Най-добрият уебсайт за закупуване на книги, покупката
+                            прави се много лесно и има големи отстъпки.
+                        </p>
+
+                        <div class="testimonial_stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial_card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-2.png" alt="image" class="testimonial_img">
+
+                        <h2 class="testimonial_title">Димитър Иванов</h2>
+                        <p class="testimonial_description">
+                           Най-добрият уебсайт за закупуване на книги, покупката
+                            прави се много лесно и има големи отстъпки.
+                        </p>
+
+                        <div class="testimonial_stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial_card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-3.png" alt="image" class="testimonial_img">
+
+                        <h2 class="testimonial_title">Стефания Василева</h2>
+                        <p class="testimonial_description">
+                           Най-добрият уебсайт за закупуване на книги, покупката
+                            прави се много лесно и има големи отстъпки.
+                        </p>
+
+                        <div class="testimonial_stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+
+                     <article class="testimonial_card swiper-slide">
+                        <img src="assets/img/testimonial-perfil-4.png" alt="image" class="testimonial_img">
+
+                        <h2 class="testimonial_title">Стефан Николов</h2>
+                        <p class="testimonial_description">
+                           Най-добрият уебсайт за закупуване на книги, покупката
+                            прави се много лесно и има големи отстъпки.
+                        </p>
+
+                        <div class="testimonial_stars">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-half-fill"></i>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer_container container grid">
+            <div>
+               <a href="#" class="footer_logo">
+                  <i class="ri-book-3-line"></i> E-Book
+               </a>
+
+               <p class="footer_description">
+                  Намерете и изследвайте най-добрите <br>
+                   електронни книги от всичките ви <br>
+                   любими писатели.
+               </p>
+            </div>
+
+            <div class="footer_data grid">
+               <div>
+                  <h3 class="footer_title">Относно</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="#" class="footer_link">Награди</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer_link">FAQs</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer_link"> Privacy policy</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer_link">Условия на услугите</a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h3 class="footer_title">Компания</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="#" class="footer_link">Блогове</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer_link">Общност</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="footer_link">Нашия екип</a>
+                     </li>
+                     
+                     <li>
+                        <a href="#" class="footer_link">Помощен център</a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h3 class="footer_title">Контакт</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <address class="footer_info">
+                           ул. Иван Вазов <br>
+                           гр. Пловдив, България
+                           пощенски код: 4000
+                        </address>
+                     </li>
+
+                     <li>
+                        <address class="footer_info">
+                           e.book@email.com <br>
+                           +359 889 123 456
+                        </address>
+                     </li>
+                  </ul>
+               </div>
+               
+               <div>
+                  <h3 class="footer_title">Социални <br> мрежи</h3>
+                  <div class="footer_social">
+                     <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://twitter.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-twitter-x-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+         <span class="footer_copy">
+            &#169; All Rights Reserved By E-Book
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

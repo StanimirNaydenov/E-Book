@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="assets/css/register_style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Формуляр за регистрация</header>
+      <form action="register.html" class="form">
+        <div class="input-box">
+          <label>Пълно име</label>
+          <input type="text" placeholder="Въведете пълното име" required />
+        </div>
+
+        <div class="input-box">
+          <label>Имейл адрес</label>
+          <input type="text" placeholder="Въведете имейл адрес" required />
+        </div>
+        <div class="input-box">
+            <label>Парола</label>
+            <input type="password" placeholder="Въведете въведете парола" required />
+          </div>
+
+          <div class="input-box">
+            <label>Потвърди парола</label>
+            <input type="password" placeholder="Потвърдете парола" required />
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Телефонен номер</label>
+            <input type="number" placeholder="Въведете телефонен номер" required />
+          </div>
+          <div class="input-box">
+            <label>Рождена дата</label>
+            <input type="date" placeholder="Въведете дата на раждане" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Пол</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">мъжки</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">женски</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">предпочитам да не казвам</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Адрес</label>
+          <input type="text" placeholder="Въведете адрес" required />
+          <input type="text" placeholder="Въведете пощенския адрес" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Държава</option>
+                <option>България</option>
+                <option>Германия</option>
+                <option>Турция</option>
+                <option>Гърция</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Въведете вашия град" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Въведете вашия регион" required />
+            <input type="number" placeholder="Въведете пощенски код" required />
+          </div>
+        </div>
+        <button>Изпращане</button>
+       
+      </form>
+      <a href="index.html"><button >Обратно</button></a>
+    </section>
+  </body>
+</html>
