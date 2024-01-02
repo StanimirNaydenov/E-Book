@@ -129,7 +129,7 @@ body {
     background: hsl(230, 16%, 45%);
 }
 /*Responsive*/
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
   }
