@@ -192,3 +192,187 @@ sr.reveal(`.home_images`, {delay: 600})
 sr.reveal(`.services_card`, {interval: 100})
 sr.reveal(`.discount_data`, {origin: 'left'})
 sr.reveal(`.discount_images`, {origin: 'right'})
+
+/*=============== FUNCTION FOR VALIDATION REGISTER FORM ===============*/
+
+function validateForm(event) {
+    event.preventDefault();
+
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    var birthdate = document.getElementById("birthdate").value;
+    var age = calculateAge(birthdate);
+    var streetAddress = document.getElementById("streetAddress").value;
+    var mailingAddress = document.getElementById("mailingAddress").value;
+    var city = document.getElementById("city").value;
+    var country = document.getElementById("country").value;
+    var region = document.getElementById("region").value;
+    var postalCode = document.getElementById("postalCode").value;
+
+    if (fullName.length < 3) {
+        alert("Пълното име трябва да бъде поне 3 символа.");
+        return;
+    }
+
+    if (!isValidEmail(email)) {
+        alert("Невалиден имейл адрес.");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Паролата трябва да бъде поне 6 символа.");
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Паролите не съвпадат.");
+        return;
+    }
+
+    if (!isValidPhoneNumber(phoneNumber)) {
+        alert("Невалиден телефонен номер.");
+        return;
+    }
+    if (age < 18) {
+        alert("Трябва да сте пълнолетен, за да се регистрирате.");
+        return;
+    }
+    if (streetAddress.length === 0) {
+        alert("Моля, въведете адрес.");
+        return;
+    }
+
+    if (mailingAddress.length === 0) {
+        alert("Моля, въведете пощенски адрес.");
+        return;
+    }
+
+    if (city.length === 0) {
+        alert("Моля, въведете град.");
+        return;
+    }
+
+    if (country === "Изберете държава") {
+        alert("Моля, изберете държава.");
+        return;
+    }
+
+    if (region.length === 0) {
+        alert("Моля, въведете регион.");
+        return;
+    }
+
+    if (postalCode.length === 0 || isNaN(postalCode)) {
+        alert("Моля, въведете валиден пощенски код.");
+        return;
+    }
+
+    alert("Регистрацията е успешна!");
+
+    clearFields();
+}
+
+function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phoneNumber) {
+    var phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phoneNumber);
+}
+
+/*=============== FUNCTION FOR CALCULATING AGE ===============*/
+function calculateAge(birthdate) {
+    var today = new Date();
+    var birthDate = new Date(birthdate);
+    var age = today.getFullYear() - birthDate.getFullYear();
+
+    var monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
+/*=============== FUNCTION FOR CLEAR REGISTRATION FIELDS ===============*/
+function clearFields() {
+    document.getElementById("fullName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("confirmPassword").value = "";
+    document.getElementById("phoneNumber").value = "";
+    document.getElementById("birthdate").value = "";
+    document.getElementById("streetAddress").value = "";
+    document.getElementById("mailingAddress").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("country").value = "Изберете държава";
+    document.getElementById("region").value = "";
+    document.getElementById("postalCode").value = "";
+   
+}
+
+/*=============== FUNCTION FOR VALIDATION PAYMENT FORM ===============*/
+function validatePayment(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("name").value
+    var cardNumber = document.getElementById("card_number").value;
+    var cardType = document.getElementById("card_type").value;
+    var expDate = document.getElementById("exp_date").value;
+    var cvv = document.getElementById("cvv").value;
+
+    if (name === 0){
+        alert("Моля въведете име");
+        return;
+    }
+
+    if (!isValidCardNumber(cardNumber)) {
+        alert("Невалиден номер на карта.");
+        return;
+    }
+
+    if (cardType === "Изберете тип карта") {
+        alert("Моля, изберете типа карта.");
+        return;
+    }
+
+    var today = new Date();
+    var expirationDate = new Date(expDate);
+    if (expirationDate < today) {
+        alert("Картата вече е изтекла.");
+        return;
+    }
+
+    if (!isValidCVV(cvv)) {
+        alert("Невалиден CVV код.");
+        return;
+    }
+
+    alert("Поръчката е успешно завършена!");
+
+    clearPayment();
+}
+
+function isValidCardNumber(cardNumber) {
+    return cardNumber.length === 16;
+}
+
+function isValidCVV(cvv) {
+    return cvv.length === 3;
+}
+
+/*=============== FUNCTION FOR CLEAR PAYMENT FIELDS ===============*/
+function clearPayment() {
+    document.getElementById("name").value = "";
+    document.getElementById("card_number").value = "";
+    document.getElementById("card_type").value = "Изберете тип карта";
+    document.getElementById("exp_date").value = "";
+    document.getElementById("cvv").value = "";
+}
+
+
