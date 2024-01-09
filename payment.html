@@ -12,7 +12,6 @@
 <body>
     
     <div class="mainscreen">
-        <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
           <div class="card">
             <div class="leftside">
               <img
@@ -22,11 +21,11 @@
               />
             </div>
             <div class="rightside">
-              <form action="payment.html">
+              <form action="payment.html" class="form" onsubmit="validatePayment(event)">
                 <h1>Направете вашата поръчка</h1>
                 <h2>Информация за плащане</h2>
                 <p>Име на картодържателя</p>
-                <input type="text" class="inputbox" placeholder="Въведете вашето име" name="name" required />
+                <input type="text" class="inputbox" placeholder="Въведете вашето име" name="name" id="name" required />
                 <p>Номер на карта</p>
                 <input type="number" placeholder="0000-0000-0000-0000" class="inputbox" name="card_number" id="card_number" required />
     
@@ -51,5 +50,7 @@
             </div>
           </div>
         </div>
+
+        <script src="assets/js/main.js"></script>
 </body>
 </html>

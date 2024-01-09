@@ -14,34 +14,34 @@
   <body>
     <section class="container">
       <header>Формуляр за регистрация</header>
-      <form action="register.html" class="form">
+      <form action="register.html" class="form" onsubmit="validateForm(event)">
         <div class="input-box">
           <label>Пълно име</label>
-          <input type="text" placeholder="Въведете пълното име" required />
+          <input type="text" id="fullName" placeholder="Въведете пълното име" required />
         </div>
 
         <div class="input-box">
           <label>Имейл адрес</label>
-          <input type="text" placeholder="Въведете имейл адрес" required />
+          <input type="text" id="email" placeholder="Въведете имейл адрес" required />
         </div>
         <div class="input-box">
             <label>Парола</label>
-            <input type="password" placeholder="Въведете въведете парола" required />
+            <input type="password" id="password" placeholder="Въведете въведете парола" required />
           </div>
 
           <div class="input-box">
             <label>Потвърди парола</label>
-            <input type="password" placeholder="Потвърдете парола" required />
+            <input type="password" id="confirmPassword" placeholder="Потвърдете парола" required />
           </div>
 
         <div class="column">
           <div class="input-box">
             <label>Телефонен номер</label>
-            <input type="number" placeholder="Въведете телефонен номер" required />
+            <input type="number" id="phoneNumber" placeholder="Въведете телефонен номер" required />
           </div>
           <div class="input-box">
             <label>Рождена дата</label>
-            <input type="date" placeholder="Въведете дата на раждане" required />
+            <input type="date" id="birthdate" placeholder="Въведете дата на раждане" required />
           </div>
         </div>
         <div class="gender-box">
@@ -63,29 +63,30 @@
         </div>
         <div class="input-box address">
           <label>Адрес</label>
-          <input type="text" placeholder="Въведете адрес" required />
-          <input type="text" placeholder="Въведете пощенския адрес" required />
+          <input type="text" id="streetAddress" placeholder="Въведете адрес" required />
+          <input type="text" id="mailingAddress" placeholder="Въведете пощенския адрес" required />
           <div class="column">
             <div class="select-box">
-              <select>
-                <option hidden>Държава</option>
-                <option>България</option>
-                <option>Германия</option>
-                <option>Турция</option>
-                <option>Гърция</option>
+              <select id="country" required>
+                  <option hidden>Изберете държава</option>
+                  <option>България</option>
+                  <option>Германия</option>
+                  <option>Турция</option>
+                  <option>Гърция</option>
               </select>
-            </div>
-            <input type="text" placeholder="Въведете вашия град" required />
+          </div>
+            <input type="text" id="city" placeholder="Въведете вашия град" required />
           </div>
           <div class="column">
-            <input type="text" placeholder="Въведете вашия регион" required />
-            <input type="number" placeholder="Въведете пощенски код" required />
+            <input type="text" id="region" placeholder="Въведете вашия регион" required />
+            <input type="number" id="postalCode" placeholder="Въведете пощенски код" required />
           </div>
         </div>
-        <button>Изпращане</button>
+        <button type="submit">Изпращане</button>
        
       </form>
       <a href="index.html"><button >Обратно</button></a>
     </section>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
