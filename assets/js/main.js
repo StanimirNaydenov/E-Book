@@ -222,8 +222,8 @@ function validateForm(event) {
         return;
     }
 
-    if (password.length < 6) {
-        alert("Паролата трябва да бъде поне 6 символа.");
+    if (!validatePassword(password)) {
+        alert("Паролата трябва да съдържа поне една малка буква, една главна буква и един символ, и да е поне 8 символа дълга.");
         return;
     }
 
@@ -273,6 +273,20 @@ function validateForm(event) {
     alert("Регистрацията е успешна!");
 
     clearFields();
+}
+
+function validatePassword(password) {
+    
+    if (password.length < 8) {
+        return false;
+    }
+
+   
+    var hasLowercase = /[a-z]/.test(password);
+    var hasUppercase = /[A-Z]/.test(password);
+    var hasSymbol = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password);
+
+    return hasLowercase && hasUppercase && hasSymbol;
 }
 
 function isValidEmail(email) {
@@ -356,6 +370,8 @@ function validatePayment(event) {
     alert("Поръчката е успешно завършена!");
 
     clearPayment();
+
+    updateDateTime();
 }
 
 function isValidCardNumber(cardNumber) {
@@ -374,5 +390,8 @@ function clearPayment() {
     document.getElementById("exp_date").value = "";
     document.getElementById("cvv").value = "";
 }
+
+
+
 
 
